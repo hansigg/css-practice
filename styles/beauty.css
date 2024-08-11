@@ -1,0 +1,126 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+.header .header__nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 1.5fr repeat(5, 1fr);
+  gap: 2px;
+  background-color: #0006;
+}
+.header .header__nav ul .header__tab {
+  padding: 3vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8vw;
+  font-weight: 400;
+}
+.header .header__nav ul .header__title {
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header .header__breadcrumbs {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  border-top: 2px solid rgba(0, 0, 0, 0.4);
+  padding: 1vh 5vh;
+  font-size: 12px;
+  font-weight: 600;
+}
+.header .header__breadcrumbs .header__crumb:last-child {
+  color: gray;
+}
+.player {
+  background-color: #0006;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 2px;
+}
+.player .player__img {
+  background-image: url(https://athlonsports.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MjA1NDgwMzg3MjEwNjUxMTM0/conor-gallagher-chelsea-captain.jpg);
+  background-size: cover;
+}
+.player .player__info {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+  gap: 2px;
+}
+.player .player__info .player__header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.player .player__info .player__header .player__category {
+  font-size: 20px;
+}
+.player .player__info .player__header .player__name {
+  font-size: 55px;
+  padding: 10px 0 60px;
+}
+.player .player__info .player__header .player__cost {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 30px;
+}
+.player .player__info .player__header .player__cost .cost__qty {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.player .player__info .player__header .player__cost .cost__qty .qty__minus {
+  color: gray;
+}
+.player .player__info .player__header .player__cost .cost__qty .qty__amount {
+  font-size: 40px;
+}
+.player .player__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+.player .player__main > div {
+  background-color: #fff;
+}
+.player .player__main .main__desc {
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+}
+.player .player__main .main__desc > p,
+.player .player__main .main__desc > span {
+  padding: 0 30px;
+}
+.player .player__main .main__faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.player .player__main .main__faq > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: rgba(0, 0, 0, 0.4) solid 2px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.desc__main {
+  font-size: 1vw;
+  line-height: 1.5vw;
+}
